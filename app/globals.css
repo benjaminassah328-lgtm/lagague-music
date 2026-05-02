@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-lora: var(--font-lora);
+            --font-raleway: var(--font-raleway);
 }
 
 @theme inline {
@@ -10,6 +12,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+    --font-orbitron: var(--font-orbitron);
+        --font-lora: var(--font-lora);
+            --font-raleway: var(--font-raleway);
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +30,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+      --font-orbitron: var(--font-orbitron);
+  
 }
