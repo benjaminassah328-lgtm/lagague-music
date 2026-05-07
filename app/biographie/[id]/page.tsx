@@ -4,7 +4,7 @@ import { artists } from "@/app/data/artiste";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-
+ 
 export default function Page() {
   const params = useParams();
   const id = params.id;

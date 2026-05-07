@@ -9,12 +9,8 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-6 md:px-10 py-3 max-w-7xl mx-auto">
         
         {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <img 
-            src="/images/logovrai.png" 
-            alt="Artiste Urbain" 
-            className="h-14 md:h-20 w-auto object-contain"
-          />
+        <Link href="/" className="flex items-center text-white font-bold">
+          LAGA<span className="text-green-800 font-bold">GUE</span>
         </Link>
 
         {/* Menu + Search */}
