@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Orbitron,Lora,Raleway } from "next/font/google";
+import { Geist, Geist_Mono,Orbitron,Lora,Raleway,Arimo } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
 import Header from "./components/Header";

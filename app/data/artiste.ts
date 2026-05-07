@@ -1,13 +1,15 @@
 
-
-
-
+import { MapPin } from "lucide-react";
 
 export const artists = [
     {
         id: 1,
         name: "DJ Arafat",
+        bio:"Coupé-décalé - Auteur - compositeur",
         image: "/images/arafat.jpg",
+        localisation:"Abidjan, CI",
+        actu:"En activité depuis 2000",
+        genre:" Coupé-découlé",
         description: `DJ Arafat, de son vrai nom Ange Didier Houon, est une icône du coupé-décalé.
 Né le 26 janvier 1986 en Côte d’Ivoire, il est le fils de Tina Glamour.
 Il devient célèbre grâce à son énergie et ses concepts innovants.
@@ -23,6 +25,7 @@ Il décède en 2019 en laissant un héritage immense.`
     {
         id: 2,
         name: "Serge Beynaud",
+         bio:"Coupé-décalé - Auteur - compositeur",
         image: "/images/beno.jpg",
         description: `Serge Beynaud est un chanteur et producteur ivoirien.
 Il est un leader du coupé-décalé moderne.
@@ -40,6 +43,7 @@ Il continue d’innover dans la musique urbaine.`
         id: 3,
         name: "Didi B",
         image: "/images/didi.jpg",
+         bio:"Rappeur - Auteur - compositeur",
         description: `Didi B est un rappeur ivoirien du groupe Kiff No Beat.
 Il est l’un des meilleurs rappeurs de sa génération.
 Il se fait connaître grâce à son flow technique.
@@ -56,6 +60,7 @@ Aujourd’hui, il est une référence en Afrique.`
         id: 4,
         name: "Himra",
         image: "/images/himra.jpg",
+         bio:"Rappeur - Auteur - compositeur",
         description: `Himra est un artiste ivoirien de nouvelle génération.
 Il se fait remarquer avec un style moderne.
 Sa musique mélange drill et sonorités africaines.
@@ -72,6 +77,7 @@ Sa carrière est en pleine progression.`
         id: 5,
         name: "Dadju",
         image: "/images/dadju.jpg",
+         bio:"R&B- Auteur - compositeur",
         description: `Dadju est un chanteur franco-congolais.
 Il est le frère de Gims.
 Il débute dans le groupe The Shin Sekaï.
@@ -88,6 +94,7 @@ Il est une star de la musique francophone.`
         id: 6,
         name: "Sindika",
         image: "/images/sindi.jpg",
+         bio:"Rappeur - Auteur - compositeur",
         description: `Sindika est un artiste africain en développement.
 Il propose un style moderne et original.
 Sa musique mélange afro et rap.
