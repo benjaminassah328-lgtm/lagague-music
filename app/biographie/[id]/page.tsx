@@ -9,6 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+
 import { artists } from "@/app/data/artiste";
 import Image from "next/image";
 import Link from "next/link";
@@ -173,28 +174,26 @@ export default function Page() {
       {/* Bottom Stats */}
       <div className="relative z-20 px-4 pb-8 -mt-10 sm:-mt-6">
         
-        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 bg-black/70 backdrop-blur-md border border-zinc-800 rounded-3xl overflow-hidden">
-          
-          {[
-            ["15+", "TITRES"],
-            ["5M+", "STREAMS"],
-            ["3", "ALBUMS"],
-            ["12", "COLLABS"],
-          ].map(([value, label], index) => (
-            <div
-              key={index}
-              className="py-5 sm:py-6 text-center border-b md:border-b-0 border-r even:border-r-0 md:even:border-r border-zinc-800"
-            >
-              <h3 className="text-2xl sm:text-3xl font-bold">
-                {value}
-              </h3>
+       <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 bg-black/70 backdrop-blur-md border border-zinc-800 rounded-3xl overflow-hidden">
+  
+ {artist.stream?.map(([value, label], index) => (
+    <div
+      key={index}
+      className="py-5 sm:py-6 text-center border-b md:border-b-0 border-r even:border-r-0 md:even:border-r border-zinc-800"
+    >
+      <h3 className="text-2xl sm:text-3xl font-bold">
+        {value}
+      </h3>
 
-              <p className="text-[10px] sm:text-xs text-zinc-500 mt-1 tracking-wider">
-                {label}
-              </p>
-            </div>
-          ))}
-        </div>
+      <p className="text-[10px] sm:text-xs text-zinc-500 mt-1 tracking-wider">
+        {label}
+      </p>
+    </div>
+  ))}
+</div>
+
+
+
       </div>
     </div>
   );
