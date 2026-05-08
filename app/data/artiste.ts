@@ -5,7 +5,7 @@ export const artists = [
     {
         id: 1,
         name: "DJ Arafat",
-        bio:"Coupé-décalé - Auteur - compositeur",
+        bio:"Coupé-décalé  •  Auteur •  compositeur",
         image: "/images/arafat.jpg",
         localisation:"Abidjan, CI",
         actu:"En activité depuis 2000",
@@ -34,6 +34,9 @@ Il décède en 2019 en laissant un héritage immense.`
         name: "Serge Beynaud",
          bio:"Coupé-décalé - Auteur - compositeur",
         image: "/images/beno.jpg",
+         localisation:"Abidjan, CI",
+        actu:"En activité depuis 2008",
+        genre:" Coupé-découlé",
         stream:[
             ["20+", "TITRES"],
             ["70M+", "STREAMS"],
@@ -57,6 +60,9 @@ Il continue d’innover dans la musique urbaine.`
         name: "Didi B",
         image: "/images/didi.jpg",
          bio:"Rappeur - Auteur - compositeur",
+          localisation:"Abidjan, CI",
+        actu:"En activité depuis 2010",
+        genre:" Rap ivoire",
          stream:[
             ["60+", "TITRES"],
             ["700M+", "STREAMS"],
@@ -80,6 +86,9 @@ Aujourd’hui, il est une référence en Afrique.`
         name: "Himra",
         image: "/images/himra.jpg",
          bio:"Rappeur - Auteur - compositeur",
+          localisation:"Abidjan, CI",
+        actu:"En activité depuis 2011",
+        genre:" Rap ivoire",
          stream:[
             ["40+", "TITRES"],
             ["150M+", "STREAMS"],
@@ -103,6 +112,9 @@ Sa carrière est en pleine progression.`
         name: "Dadju",
         image: "/images/dadju.jpg",
          bio:"R&B- Auteur - compositeur",
+          localisation:"Abidjan, CI",
+        actu:"En activité depuis 2015",
+        genre:" R&B",
          stream:[
             ["70+", "TITRES"],
             ["500M+", "STREAMS"],
@@ -125,6 +137,9 @@ Il est une star de la musique francophone.`
         id: 6,
         name: "Sindika",
         image: "/images/sindi.jpg",
+         localisation:"Abidjan, CI",
+        actu:"En activité depuis 2022",
+        genre:" Rap ivoire",
         stream:[
             ["30+", "TITRES"],
             ["20M+", "STREAMS"],

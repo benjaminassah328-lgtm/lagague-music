@@ -7,8 +7,15 @@ import {
   Music2,
   ArrowLeft,
   ArrowRight,
+  Link2,
+  
 } from "lucide-react";
-
+import {
+  FaInstagram,
+  FaSpotify,
+  FaYoutube,
+  FaTiktok,
+} from "react-icons/fa";
 
 import { artists } from "@/app/data/artiste";
 import Image from "next/image";
@@ -64,21 +71,12 @@ export default function Page() {
             <div>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight leading-none">
                 {artist.name}
+                  
               </h1>
-
-              <div className="flex flex-wrap justify-center xl:justify-start gap-2 text-xs sm:text-sm text-zinc-400 mt-4">
-                <span className="text-[#4ade80] font-semibold">
-                  Rappeur
-                </span>
-
-                <span>•</span>
-
-                <span>Auteur</span>
-
-                <span>•</span>
-
-                <span>Compositeur</span>
-              </div>
+<div className="text-green-600">
+  {artist.bio}
+</div>
+             
             </div>
 
             {/* Description */}
@@ -106,25 +104,40 @@ export default function Page() {
             </div>
 
             {/* Socials */}
-            <div>
-              <h3 className="text-xs sm:text-sm uppercase text-zinc-500 mb-4">
-                Suivez {artist.name}
-              </h3>
+<div>
+  <h3 className="text-xs sm:text-sm uppercase text-zinc-500 mb-4">
+    Suivez {artist.name}
+  </h3>
 
-              <div className="flex justify-center xl:justify-start gap-3">
-                
-                <div className="w-11 h-11 rounded-full border border-zinc-700 flex items-center justify-center hover:border-[#4ade80] hover:text-[#4ade80] transition cursor-pointer">
-                  <Music2 className="w-5 h-5" />
-                </div>
-              </div>
-            </div>
+  <div className="flex justify-center xl:justify-start gap-3">
+    
+    <div className="flex justify-center xl:justify-start gap-3">
 
+  <div className="w-11 h-11 rounded-full border border-zinc-700 flex items-center justify-center hover:border-pink-500 hover:text-pink-500 transition cursor-pointer">
+    <FaInstagram className="text-lg" />
+  </div>
+
+  <div className="w-11 h-11 rounded-full border border-zinc-700 flex items-center justify-center hover:border-green-500 hover:text-green-500 transition cursor-pointer">
+    <FaSpotify className="text-lg" />
+  </div>
+
+  <div className="w-11 h-11 rounded-full border border-zinc-700 flex items-center justify-center hover:border-red-500 hover:text-red-500 transition cursor-pointer">
+    <FaYoutube className="text-lg" />
+  </div>
+
+  <div className="w-11 h-11 rounded-full border border-zinc-700 flex items-center justify-center hover:border-white hover:text-white transition cursor-pointer">
+    <FaTiktok className="text-lg" />
+  </div>
+
+</div>
+  </div>
+</div>
             {/* Button */}
             <div className="flex justify-center xl:justify-start">
-              <button className="mt-2 bg-[#4ade80] hover:bg-[#38c96b] transition text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold flex items-center gap-3 text-sm sm:text-base">
+              <Link href="/partenaires" className="mt-2 bg-[#4ade80] hover:bg-[#38c96b] transition text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold flex items-center gap-3 text-sm sm:text-base">
                 Voir les partenaires
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
             </div>
           </div>
 
