@@ -206,7 +206,33 @@ export default function Page() {
 </div>
 
 
+{artist.videos?.map((video, index) => (
+  <div key={index}>
+    <video controls className="w-full rounded-xl">
+      <source src={video.src} type="video/mp4" />
+    </video>
+  </div>
+))}
+<div className="mt-10">
+  <h2 className="text-xl font-bold mb-4">
+    Sons populaires
+  </h2>
 
+  {artist.music?.map((song, index) => (
+    <div
+      key={index}
+      className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 mb-4"
+    >
+      <p className="mb-3 font-medium">
+        {song.title}
+      </p>
+
+      <audio controls className="w-full">
+        <source src={song.audio} type="audio/mpeg" />
+      </audio>
+    </div>
+  ))}
+</div>
       </div>
     </div>
   );

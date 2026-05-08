@@ -10,11 +10,24 @@ export const artists = [
         localisation:"Abidjan, CI",
         actu:"En activité depuis 2000",
         genre:" Coupé-découlé",
+         music: [
+    {
+      title: "Gagne temps",
+      audio: "/songs/gagne temps.mp3",
+    },
+  ],
+        videos: [
+  {
+    title: "Gagne temps clip officiel",
+    src: "/videos/gagne temps.mp4",
+  },
+],
         stream:[
             ["30+", "TITRES"],
             ["300M+", "STREAMS"],
             ["9", "ALBUMS"],
             ["20", "COLLABS"],
+            
           ],
         description: `DJ Arafat, de son vrai nom Ange Didier Houon, est une icône du coupé-décalé.
 Né le 26 janvier 1986 en Côte d’Ivoire, il est le fils de Tina Glamour.
@@ -37,6 +50,18 @@ Il décède en 2019 en laissant un héritage immense.`
          localisation:"Abidjan, CI",
         actu:"En activité depuis 2008",
         genre:" Coupé-découlé",
+         music: [
+    {
+      title: "Remanbélé",
+      audio: "/songs/remanbélé.mp3",
+    },
+  ],
+        videos: [
+  {
+    title: "Clip officiel",
+    src: "/videos/remanbélé.mp4",
+  },
+],
         stream:[
             ["20+", "TITRES"],
             ["70M+", "STREAMS"],
@@ -63,6 +88,18 @@ Il continue d’innover dans la musique urbaine.`
           localisation:"Abidjan, CI",
         actu:"En activité depuis 2010",
         genre:" Rap ivoire",
+         music: [
+    {
+      title: "Je m'appelle FEAT Zlatan",
+      audio: "/songs/je m'appelle.mp3",
+    },
+  ],
+        videos: [
+  {
+    title: "Je m'apelle Clip officiel",
+    src: "/videos/coupé.mp4",
+  },
+],
          stream:[
             ["60+", "TITRES"],
             ["700M+", "STREAMS"],
@@ -89,6 +126,18 @@ Aujourd’hui, il est une référence en Afrique.`
           localisation:"Abidjan, CI",
         actu:"En activité depuis 2011",
         genre:" Rap ivoire",
+         music: [
+    {
+      title: "No Pain No Gain FEAT Ninho",
+      audio: "/songs/no pain.mp3",
+    },
+  ],
+        videos: [
+  {
+    title: "No pain No Gain Clip officiel",
+    src: "/videos/no pain.mp4",
+  },
+],
          stream:[
             ["40+", "TITRES"],
             ["150M+", "STREAMS"],
@@ -115,6 +164,18 @@ Sa carrière est en pleine progression.`
           localisation:"Abidjan, CI",
         actu:"En activité depuis 2015",
         genre:" R&B",
+         music: [
+    {
+      title: "Ambassadeur",
+      audio: "/songs/ambassadeur.mp3",
+    },
+  ],
+        videos: [
+  {
+    title: "Ambassadeur Clip officiel",
+    src: "/videos/ambassadeur.mp4",
+  },
+],
          stream:[
             ["70+", "TITRES"],
             ["500M+", "STREAMS"],
@@ -140,6 +201,18 @@ Il est une star de la musique francophone.`
          localisation:"Abidjan, CI",
         actu:"En activité depuis 2022",
         genre:" Rap ivoire",
+         music: [
+    {
+      title: "Flocon",
+      audio: "/songs/flocon.mp3",
+    },
+  ],
+        videos: [
+  {
+    title: "Flocon Clip officiel",
+    src: "/videos/flocon.mp4",
+  },
+],
         stream:[
             ["30+", "TITRES"],
             ["20M+", "STREAMS"],
