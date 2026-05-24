@@ -173,7 +173,7 @@ export default function Page() {
     />
 
     {/* IMAGE */}
-    <div className="absolute inset-[2px] rounded-[30px] overflow-hidden bg-black">
+    <div className="absolute inset-0.5 rounded-[30px] overflow-hidden bg-black">
       
       {/* Glow */}
       <div className="absolute inset-0 bg-[#4ade80]/8 blur-3xl rounded-full scale-90 z-10" />
