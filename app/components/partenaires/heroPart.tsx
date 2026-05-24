@@ -1,62 +1,40 @@
+import Sidebar from "@/app/components/layout/sidebar";
 
-
-
-export default function HeroPArt (){
-    return(
-        
-      <section
-        className="
-          flex-1
-          flex
-          items-center
-          justify-center
-          relative
-          overflow-hidden
-        "
-      >
-
-        {/* GLOW */}
-        <div
-          className="
-            absolute
-            w-175
-            h-175
-            blur-[160px]
-            rounded-full
-          "
-        />
-
-        {/* IMAGE + TEXTE */}
-        <div className="relative z-10 flex flex-col items-center">
-
-          <img
-  src="/images/arafat.jpg"
-  alt="DJ Arafat"
-  className="
-    w-100
-    h-60
-    rounded-3xl
-    border-transparent
-    shadow-2xl
+export default function HomePage() {
+    return (
+        <main className="bg-[#050505] min-h-screen text-white flex overflow-hidden m-10 justify-center">
+            <aside
+                className=" w-65 border-r  border-zinc-800 bg-[#0b0b0b] overflow-y-auto fill"
+            >
+                <Sidebar />
+            </aside>
+            <div
+                className="
+    ml-65
+    min-h-screen
+    flex
+    items-center
+    justify-center
+    px-20
   "
-/>
+            >
 
-          <div className="text-center mt-5 max-w-xl flex flex-col items-center">
+                {/* WRAPPER */}
+                <div className="flex items-center justify-between  max-w-350">
 
-           <h1 className="text-5xl font-bold mb-3 leading-none">
-  DJ Arafat
-</h1>
+                    {/* IMAGE */}
+                    <div className="flex justify-center flex-1">
+                      
+                    </div>
+                </div>
 
-<p className="text-zinc-400 text-base leading-relaxed max-w-md font-bold font-lora ">
-  Icône de la musique urbaine africaine.
-  Une énergie puissante qui inspire
-  toute une génération.
-</p>
-          </div>
+               
 
-        </div>
 
-      </section>
 
-    )
+            </div>
+
+
+        </main>
+    );
 }
