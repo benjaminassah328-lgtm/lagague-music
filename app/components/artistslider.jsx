@@ -1,11 +1,11 @@
 "use client";
 
 const artists = [
-  { name: "Daishikan", image: "/images/arafat.jpg" },
-  { name: "Serge Beynaud", image: "/images/beno.jpg" },
+  { name: "6XDM", image: "/images/manou2.jpeg" },
+  { name: "Lil Flex", image: "/images/flex2.jpeg" },
   { name: "Didi B", image: "/images/didi.jpg" },
   { name: "Sindika", image: "/images/sindi.jpg" },
-  { name: "Himra", image: "/images/himra.jpg" },
+  { name: "St Jesus", image: "/images/jesus.jpeg" },
   { name: "Dadju", image: "/images/dadju.jpg" },
 ];
 
