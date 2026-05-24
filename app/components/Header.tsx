@@ -13,7 +13,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center text-white font-bold text-lg">
-          LAGA<span className="text-green-800 font-bold">GUE</span>
+          LAGA<span className="text-green-800 font-bold">GOUE</span>
         </Link>
 
         {/* Right side */}

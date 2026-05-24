@@ -3,6 +3,7 @@ import { Geist, Geist_Mono,Orbitron,Lora,Raleway,Arimo } from "next/font/google"
 import "./globals.css";
 import Footer from "./components/footer";
 import Header from "./components/Header";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +45,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${lora.variable} ${raleway.variable} antialiased`}
       >
         <div className="bg-linear-to-br from-green-900 via-black to-green-900">
-          <Header />
+        <Header/>
         {children}
         <Footer/>
         </div>

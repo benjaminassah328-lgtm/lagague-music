@@ -5,9 +5,9 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section
-      className="relative w-full min-h-screen flex items-center px-4 sm:px-6 md:px-12 lg:px-16 py-24 overflow-hidden"
+      className="relative w-full min-h-screen flex items-center px-4 sm:px-6 md:px-12 lg:px-16 py-30 overflow-hidden mt-4"
       style={{
-        backgroundImage: "url('/images/hero2.jpg')",
+        backgroundImage: "url('/images/prince.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -28,7 +28,7 @@ const Hero = () => {
         {/* Description */}
         <p className="text-zinc-300 mt-5 md:mt-6 text-sm sm:text-base md:text-lg leading-relaxed max-w-md">
           Talents. Passions. Créations. <br />
-          De Abidjan à la scène mondiale.
+          D'Abidjan à la scène mondiale.
         </p>
 
         {/* Buttons */}

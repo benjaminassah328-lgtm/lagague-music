@@ -33,7 +33,7 @@ export default function ArtistsSlider() {
               
               {/* Image */}
               <div className="h-56 sm:h-64 md:h-72">
-                <img
+              <img
                   src={artist.image}
                   alt={artist.name}
                   className="w-full h-full object-cover"

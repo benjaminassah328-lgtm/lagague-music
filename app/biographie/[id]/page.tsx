@@ -141,23 +141,71 @@ export default function Page() {
             </div>
           </div>
 
-          {/* CENTER IMAGE */}
-          <div className="order-1 xl:order-2 relative flex justify-center">
-            
-            <div className="relative w-[260px] h-[360px] sm:w-[340px] sm:h-[470px] md:w-[420px] md:h-[580px] lg:w-[500px] lg:h-[680px]">
-              
-              {/* Glow */}
-              <div className="absolute inset-0 bg-[#4ade80]/20 blur-3xl rounded-full scale-90" />
+         {/* CENTER IMAGE */}
+<div className="order-1 xl:order-2 relative flex justify-center">
+  
+  <div
+    className="
+      relative
+      w-65
+      h-90
+      sm:w-85
+      sm:h-117.5
+      md:w-105
+      md:h-145
+      lg:w-125
+      lg:h-170
+      rounded-4xl
+      overflow-hidden
+    "
+  >
+    
+    {/* BORDER ANIMÉ */}
+    <div
+      className="
+        absolute
+        inset-0
+        rounded-4xl
+        p-0.5
+        bg-[conic-gradient(from_0deg,#4ade80,transparent,#4ade80)]
+        animate-spinSlow
+      "
+    />
 
-              <Image
-                src={artist.image || ""}
-                alt={artist.name || ""}
-                fill
-                priority
-                className="object-cover rounded-[30px] shadow-2xl"
-              />
-            </div>
-          </div>
+    {/* IMAGE */}
+    <div className="absolute inset-[2px] rounded-[30px] overflow-hidden bg-black">
+      
+      {/* Glow */}
+      <div className="absolute inset-0 bg-[#4ade80]/8 blur-3xl rounded-full scale-90 z-10" />
+
+      <Image
+        src={artist.image || ""}
+        alt={artist.name || ""}
+        fill
+        priority
+        className="
+          object-cover
+          rounded-[30px]
+          shadow-2xl
+          hover:scale-105
+          transition-transform
+          duration-700
+        "
+      />
+    </div>
+
+    {/* LUMIÈRE */}
+    <div
+      className="
+        absolute
+        inset-0
+        rounded-4xl
+        pointer-events-none
+        shadow-[0_0_40px_#4ade80aa]
+      "
+    />
+  </div>
+</div>
 
           {/* RIGHT PANEL */}
           <div className="order-3 hidden xl:flex flex-col gap-4">

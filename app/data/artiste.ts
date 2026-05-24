@@ -4,9 +4,9 @@ import { MapPin } from "lucide-react";
 export const artists = [
     {
         id: 1,
-        name: "DJ Arafat",
+        name: "6XDM",
         bio:"Coupé-décalé  •  Auteur •  compositeur",
-        image: "/images/arafat.jpg",
+        image: "/images/manou.jpeg",
         localisation:"Abidjan, CI",
         actu:"En activité depuis 2000",
         genre:" Coupé-découlé",
@@ -44,9 +44,9 @@ Il décède en 2019 en laissant un héritage immense.`
 
     {
         id: 2,
-        name: "Serge Beynaud",
+        name: "LIL FLEX",
          bio:"Coupé-décalé - Auteur - compositeur",
-        image: "/images/beno.jpg",
+        image: "/images/flex.jpeg",
          localisation:"Abidjan, CI",
         actu:"En activité depuis 2008",
         genre:" Coupé-découlé",
@@ -158,8 +158,8 @@ Sa carrière est en pleine progression.`
 
     {
         id: 5,
-        name: "Dadju",
-        image: "/images/dadju.jpg",
+        name: "SAINT jESUS",
+        image: "/images/st jesus.jpeg",
          bio:"R&B- Auteur - compositeur",
           localisation:"Abidjan, CI",
         actu:"En activité depuis 2015",
