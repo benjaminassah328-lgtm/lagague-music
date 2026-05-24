@@ -100,11 +100,11 @@ export default function Navbar() {
 
           <li>
             <Link
-              href="/contact"
+              href="/contacts"
               className="hover:text-white transition"
               onClick={() => setIsOpen(false)}
             >
-              Contact
+              Contacts
             </Link>
           </li>
 

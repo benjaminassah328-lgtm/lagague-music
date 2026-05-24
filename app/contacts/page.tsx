@@ -1,11 +1,11 @@
-import Admin from "../components/Contacts/Admin"
+import Conteners from "../components/contacts/conteners";
 
 
 
-export default function page(){
+export default function Page(){
     return(
         <main>
-<Admin/>
+            <Conteners/>
         </main>
     )
-} 
+}

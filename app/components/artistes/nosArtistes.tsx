@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { artists } from "@/app/data/artiste";
+import { artists } from "@/app/data/artistes2";
 import Link from "next/link";
 
 
