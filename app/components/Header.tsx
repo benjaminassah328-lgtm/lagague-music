@@ -34,8 +34,8 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href="/contact" className="hover:text-white transition">
-                Contact
+              <Link href="/contacts" className="hover:text-white transition">
+                Contacts
               </Link>
             </li>
 

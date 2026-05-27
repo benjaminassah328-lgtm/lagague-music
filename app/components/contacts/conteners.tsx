@@ -1,375 +1,210 @@
 "use client";
-
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { useState } from "react";
-
+import { BsInstagram, BsTiktok } from "react-icons/bs";
 import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-} from "lucide-react";
-
-export default function Conteners() {
-  const [nom, setNom] = useState("");
-  const [email, setEmail] = useState("");
-  const [messageClient, setMessageClient] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const message = `Bonjour Lagague Music,%0A%0A
-Nom: ${nom}%0A
-Email: ${email}%0A
-Message: ${messageClient}`;
-
-    const url = `https://wa.me/2250709294468?text=${message}`;
-
-    window.open(url, "_blank");
-
-    setNom("");
-    setEmail("");
-    setMessageClient("");
-  };
-
+  FaInstagram,
+  FaSpotify,
+  FaYoutube,
+  FaTiktok,
+  FaFacebook,
+} from "react-icons/fa";
+export default function ContactForm() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black text-white">
-      
-      {/* BACKGROUND */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/didi.jpg"
-          alt="background"
-          fill
-          className="object-cover opacity-20"
-        />
-      </div>
+    <section
+      className="
+        min-h-screen
+        bg-[#e9e9e9]
+        flex
+        items-center
+        justify-center
+        px-6
+        py-20
+        relative
+        overflow-hidden
+      "
+    >
+      {/* Décor vert */}
+      <div className="absolute top-20 right-20 w-40 h-20 bg-green-400" />
+      <div className="absolute bottom-20 left-14 w-52 h-24 bg-green-400" />
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+      {/* Container principal */}
+      <div
+        className="
+          relative
+          w-full
+          max-w-6xl
+          bg-[#070707]
+          text-white
+          px-10
+          md:px-20
+          py-16
+          grid
+          md:grid-cols-2
+          gap-16
+          shadow-2xl
 
-      {/* CONTENT */}
-      <div className="relative z-20 min-h-screen flex items-center justify-center px-4 py-20">
-        
-        <div
-          className="
-            w-full
-            max-w-7xl
-            grid
-            grid-cols-1
-            lg:grid-cols-2
-            gap-10
-            items-center
-          "
-        >
-          
-          {/* LEFT SIDE */}
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-8"
-          >
-            
-            <div>
-              <p className="uppercase text-[#4ade80] tracking-[0.3em] text-xs font-semibold mb-4">
-                Contact
-              </p>
+          animate-[slideDown_1.2s_ease-out]
+        "
+        style={{
+          animationFillMode: "forwards",
+        }}
+      >
+        {/* LEFT SIDE */}
+        <div className="flex flex-col justify-between">
+          {/* Navbar */}
+         
+          {/* Texte */}
+          <div>
+            <h1 className="text-6xl font-bold leading-none mb-14">
+              Contacter Nous
+              <span className="text-green-400">.</span>
+            </h1>
 
-              <h1
-                className="
-                  text-4xl
-                  sm:text-5xl
-                  lg:text-6xl
-                  font-black
-                  leading-tight
-                "
-              >
-                PARLONS DE <br />
-                <span className="text-[#4ade80]">
-                  MUSIQUE
-                </span>
-              </h1>
-            </div>
+            <div className="flex gap-8">
+              {/* Ligne verte */}
+              <div className="w-1 bg-green-400 rounded-full" />
 
-            <p className="text-zinc-300 leading-8 max-w-xl text-sm sm:text-base">
-              Une collaboration ? Une question ? 
-              Une proposition artistique ?
-              Notre équipe est disponible pour discuter
-              de vos projets et collaborations musicales.
-            </p>
+              {/* Infos */}
+              <div className="space-y-12 text-zinc-300">
+                <div>
+                  <p className="text-zinc-500 mb-4">Localisation</p>
 
-            {/* INFOS */}
-            <div className="space-y-5">
-              
-              <div className="flex items-center gap-4">
-                <div
-                  className="
-                    w-12
-                    h-12
-                    rounded-full
-                    border
-                    border-zinc-700
-                    flex
-                    items-center
-                    justify-center
-                    text-[#4ade80]
-                  "
-                >
-                  <Mail size={18} />
+                  <p className="leading-8">
+                    Cocody Abatta <br />
+                    Abidjan, Côte d’Ivoire <br />
+                    
+                  </p>
                 </div>
 
                 <div>
-                  <p className="text-sm text-zinc-500">
-                    Email
-                  </p>
+                  <p className="text-zinc-500 mb-4">Contacts</p>
 
-                  <p className="font-medium">
-                    contact@lagaguemusic.com
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div
-                  className="
-                    w-12
-                    h-12
-                    rounded-full
-                    border
-                    border-zinc-700
-                    flex
-                    items-center
-                    justify-center
-                    text-[#4ade80]
-                  "
-                >
-                  <Phone size={18} />
-                </div>
-
-                <div>
-                  <p className="text-sm text-zinc-500">
-                    Téléphone
-                  </p>
-
-                  <p className="font-medium">
-                    +225 07 09 29 44 68
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div
-                  className="
-                    w-12
-                    h-12
-                    rounded-full
-                    border
-                    border-zinc-700
-                    flex
-                    items-center
-                    justify-center
-                    text-[#4ade80]
-                  "
-                >
-                  <MapPin size={18} />
-                </div>
-
-                <div>
-                  <p className="text-sm text-zinc-500">
-                    Localisation
-                  </p>
-
-                  <p className="font-medium">
-                    Abidjan, Côte d’Ivoire
+                  <p className="leading-8">
+                    benjaminassah328@gmail.com <br />
+                    +225 07 08 66 57 82
                   </p>
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          {/* FORMULAIRE */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          {/* Social */}
+          <div className="flex gap-6 mt-20 text-zinc-400">
+            <span><FaFacebook/></span>
+            <span><BsInstagram/></span>
+            <span><BsTiktok/></span>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="relative flex items-center justify-center">
+          {/* Bordures vertes */}
+          <div className="absolute inset-0 border-l-4 border-t-4 border-green-400 w-20 h-20" />
+          <div className="absolute top-0 right-0 border-r-4 border-t-4 border-green-400 w-20 h-20" />
+          <div className="absolute bottom-0 left-0 border-l-4 border-b-4 border-green-400 w-20 h-20" />
+          <div className="absolute bottom-0 right-0 border-r-4 border-b-4 border-green-400 w-20 h-20" />
+
+          {/* Formulaire */}
+          <div
             className="
-              bg-white/5
-              border
-              border-zinc-800
-              backdrop-blur-xl
-              rounded-[30px]
-              p-6
-              sm:p-8
+              w-full
+              max-w-md
+              bg-[#1b1b1b]
+              p-10
               shadow-2xl
             "
           >
-            
-            {/* LOGO */}
-            <div className="flex justify-center mb-8">
-              
-              <div
-                className="
-                  relative
-                  w-28
-                  h-28
-                  rounded-3xl
-                  overflow-hidden
-                "
-              >
-                
-                {/* BORDER ANIMÉ */}
-                <div
-                  className="
-                    absolute
-                    inset-0
-                    rounded-3xl
-                    p-0.5
-                    bg-[conic-gradient(from_0deg,#4ade80,transparent,#4ade80)]
-                    animate-spinSlow
-                  "
-                />
-
-                {/* IMAGE */}
-                <div className="absolute inset-0.5 rounded-3xl overflow-hidden">
-                  <Image
-                    src="/images/manou.jpeg"
-                    alt="logo"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-center mb-2">
-              Contactez-nous
+            <h2 className="text-3xl font-bold mb-10 text-center">
+              LAGA<span className="text-green-700">GOUE</span>
             </h2>
 
-            <p className="text-zinc-400 text-center mb-8 text-sm">
-              Réponse rapide via WhatsApp
-            </p>
-
-            {/* FORM */}
-            <form
-              onSubmit={handleSubmit}
-              className="space-y-5"
-            >
-              
-              {/* NOM */}
+            <form className="space-y-10">
+              {/* Name */}
               <div>
-                <label className="block mb-2 text-sm text-zinc-300">
+                <label className="text-zinc-500 uppercase text-sm">
                   Nom
                 </label>
 
                 <input
                   type="text"
-                  value={nom}
-                  onChange={(e) => setNom(e.target.value)}
-                  placeholder="Votre nom"
-                  required
+                  placeholder="Mr Pavlov"
                   className="
                     w-full
-                    bg-zinc-900/70
-                    border
-                    border-zinc-800
-                    rounded-xl
-                    px-4
-                    py-3
-                    text-white
+                    bg-transparent
+                    border-b
+                    border-zinc-700
+                    py-4
+                    text-2xl
                     outline-none
-                    focus:border-[#4ade80]
-                    transition
+                    focus:border-green-400
+                    transition-all
                   "
                 />
               </div>
 
-              {/* EMAIL */}
+              {/* Email */}
               <div>
-                <label className="block mb-2 text-sm text-zinc-300">
+                <label className="text-zinc-500 uppercase text-sm">
                   Email
                 </label>
 
                 <input
                   type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Votre email"
-                  required
+                  placeholder="example@gmail.com"
                   className="
                     w-full
-                    bg-zinc-900/70
-                    border
-                    border-zinc-800
-                    rounded-xl
-                    px-4
-                    py-3
-                    text-white
+                    bg-transparent
+                    border-b
+                    border-zinc-700
+                    py-4
+                    text-lg
                     outline-none
-                    focus:border-[#4ade80]
-                    transition
+                    focus:border-green-400
+                    transition-all
                   "
                 />
               </div>
 
-              {/* MESSAGE */}
+              {/* Message */}
               <div>
-                <label className="block mb-2 text-sm text-zinc-300">
+                <label className="text-zinc-500 uppercase text-sm">
                   Message
                 </label>
 
                 <textarea
-                  rows={5}
-                  value={messageClient}
-                  onChange={(e) =>
-                    setMessageClient(e.target.value)
-                  }
+                  rows={3}
                   placeholder="Votre message..."
-                  required
                   className="
                     w-full
-                    bg-zinc-900/70
-                    border
-                    border-zinc-800
-                    rounded-xl
-                    px-4
-                    py-3
-                    text-white
-                    outline-none
+                    bg-transparent
+                    border-b
+                    border-zinc-700
+                    py-4
                     resize-none
-                    focus:border-[#4ade80]
-                    transition
+                    outline-none
+                    focus:border-green-400
+                    transition-all
                   "
                 />
               </div>
 
-              {/* BTN */}
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
+              {/* Button */}
+              <button
                 type="submit"
                 className="
                   w-full
-                  bg-[#4ade80]
-                  hover:bg-[#38c96b]
-                  transition
+                  bg-green-400
                   text-black
-                  font-semibold
+                  font-bold
                   py-4
-                  rounded-xl
-                  flex
-                  items-center
-                  justify-center
-                  gap-3
+                  hover:scale-[1.02]
+                  transition-all
+                  duration-300
                 "
               >
-                Envoyer le message
-
-                <Send size={18} />
-              </motion.button>
+                SEND MESSAGE
+              </button>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
