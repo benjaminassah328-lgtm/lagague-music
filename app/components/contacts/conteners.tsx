@@ -201,7 +201,7 @@ export default function ContactForm() {
                   duration-300
                 "
               >
-                SEND MESSAGE
+                Envoyer
               </button>
             </form>
           </div>
