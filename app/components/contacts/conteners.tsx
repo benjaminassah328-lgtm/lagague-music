@@ -1,16 +1,16 @@
 "use client";
 import { BsInstagram, BsTiktok } from "react-icons/bs";
 import {
-  FaInstagram,
-  FaSpotify,
-  FaYoutube,
-  FaTiktok,
-  FaFacebook,
+    FaInstagram,
+    FaSpotify,
+    FaYoutube,
+    FaTiktok,
+    FaFacebook,
 } from "react-icons/fa";
 export default function ContactForm() {
-  return (
-    <section
-      className="
+    return (
+        <section
+            className="
         min-h-screen
         bg-[#e9e9e9]
         flex
@@ -21,14 +21,14 @@ export default function ContactForm() {
         relative
         overflow-hidden
       "
-    >
-      {/* Décor vert */}
-      <div className="absolute top-20 right-20 w-40 h-20 bg-green-400" />
-      <div className="absolute bottom-20 left-14 w-52 h-24 bg-green-400" />
+        >
+            {/* Décor vert */}
+            <div className="absolute top-20 right-20 w-40 h-20 bg-green-400" />
+            <div className="absolute bottom-20 left-14 w-52 h-24 bg-green-400" />
 
-      {/* Container principal */}
-      <div
-        className="
+            {/* Container principal */}
+            <div
+                className="
           relative
           w-full
           max-w-6xl
@@ -44,90 +44,90 @@ export default function ContactForm() {
 
           animate-[slideDown_1.2s_ease-out]
         "
-        style={{
-          animationFillMode: "forwards",
-        }}
-      >
-        {/* LEFT SIDE */}
-        <div className="flex flex-col justify-between">
-          {/* Navbar */}
-         
-          {/* Texte */}
-          <div>
-            <h1 className="text-6xl font-bold leading-none mb-14">
-              Contacter Nous
-              <span className="text-green-400">.</span>
-            </h1>
+                style={{
+                    animationFillMode: "forwards",
+                }}
+            >
+                {/* LEFT SIDE */}
+                <div className="flex flex-col justify-between">
+                    {/* Navbar */}
 
-            <div className="flex gap-8">
-              {/* Ligne verte */}
-              <div className="w-1 bg-green-400 rounded-full" />
+                    {/* Texte */}
+                    <div>
+                        <h1 className="text-6xl font-bold leading-none mb-14">
+                            Contacter Nous
+                            <span className="text-green-400">.</span>
+                        </h1>
 
-              {/* Infos */}
-              <div className="space-y-12 text-zinc-300">
-                <div>
-                  <p className="text-zinc-500 mb-4">Localisation</p>
+                        <div className="flex gap-8">
+                            {/* Ligne verte */}
+                            <div className="w-1 bg-green-400 rounded-full" />
 
-                  <p className="leading-8">
-                    Cocody Abatta <br />
-                    Abidjan, Côte d’Ivoire <br />
-                    
-                  </p>
+                            {/* Infos */}
+                            <div className="space-y-12 text-zinc-300">
+                                <div>
+                                    <p className="text-zinc-500 mb-4">Localisation</p>
+
+                                    <p className="leading-8">
+                                        Cocody Abatta, Jules Verne.<br/>
+                                        Abidjan, Côte d’Ivoire <br />
+
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <p className="text-zinc-500 mb-4">Contacts</p>
+
+                                    <p className="leading-8">
+                                        benjaminassah328@gmail.com <br />
+                                        +225 07 08 66 57 82
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Social */}
+                    <div className="flex gap-6 mt-20 text-zinc-400">
+                        <span><FaFacebook /></span>
+                        <span><BsInstagram /></span>
+                        <span><BsTiktok /></span>
+                    </div>
                 </div>
 
-                <div>
-                  <p className="text-zinc-500 mb-4">Contacts</p>
+                {/* RIGHT SIDE */}
+                <div className="relative flex items-center justify-center">
+                    {/* Bordures vertes */}
+                    <div className="absolute inset-0 border-l-4 border-t-4 border-green-400 w-20 h-20" />
+                    <div className="absolute top-0 right-0 border-r-4 border-t-4 border-green-400 w-20 h-20" />
+                    <div className="absolute bottom-0 left-0 border-l-4 border-b-4 border-green-400 w-20 h-20" />
+                    <div className="absolute bottom-0 right-0 border-r-4 border-b-4 border-green-400 w-20 h-20" />
 
-                  <p className="leading-8">
-                    benjaminassah328@gmail.com <br />
-                    +225 07 08 66 57 82
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Social */}
-          <div className="flex gap-6 mt-20 text-zinc-400">
-            <span><FaFacebook/></span>
-            <span><BsInstagram/></span>
-            <span><BsTiktok/></span>
-          </div>
-        </div>
-
-        {/* RIGHT SIDE */}
-        <div className="relative flex items-center justify-center">
-          {/* Bordures vertes */}
-          <div className="absolute inset-0 border-l-4 border-t-4 border-green-400 w-20 h-20" />
-          <div className="absolute top-0 right-0 border-r-4 border-t-4 border-green-400 w-20 h-20" />
-          <div className="absolute bottom-0 left-0 border-l-4 border-b-4 border-green-400 w-20 h-20" />
-          <div className="absolute bottom-0 right-0 border-r-4 border-b-4 border-green-400 w-20 h-20" />
-
-          {/* Formulaire */}
-          <div
-            className="
+                    {/* Formulaire */}
+                    <div
+                        className="
               w-full
               max-w-md
               bg-[#1b1b1b]
               p-10
               shadow-2xl
             "
-          >
-            <h2 className="text-3xl font-bold mb-10 text-center">
-              LAGA<span className="text-green-700">GOUE</span>
-            </h2>
+                    >
+                        <h2 className="text-3xl font-bold mb-10 text-center">
+                            LAGA<span className="text-green-700">GOUE</span>
+                        </h2>
 
-            <form className="space-y-10">
-              {/* Name */}
-              <div>
-                <label className="text-zinc-500 uppercase text-sm">
-                  Nom
-                </label>
+                        <form className="space-y-10">
+                            {/* Name */}
+                            <div>
+                                <label className="text-zinc-500 uppercase text-sm">
+                                    Ton nom...
+                                </label>
 
-                <input
-                  type="text"
-                  placeholder="Mr Pavlov"
-                  className="
+                                <input
+                                    type="text"
+                                    placeholder="Mr Pavlov"
+                                    className="
                     w-full
                     bg-transparent
                     border-b
@@ -138,19 +138,19 @@ export default function ContactForm() {
                     focus:border-green-400
                     transition-all
                   "
-                />
-              </div>
+                                />
+                            </div>
 
-              {/* Email */}
-              <div>
-                <label className="text-zinc-500 uppercase text-sm">
-                  Email
-                </label>
+                            {/* Email */}
+                            <div>
+                                <label className="text-zinc-500 uppercase text-sm">
+                                    Email
+                                </label>
 
-                <input
-                  type="email"
-                  placeholder="example@gmail.com"
-                  className="
+                                <input
+                                    type="email"
+                                    placeholder="example@gmail.com"
+                                    className="
                     w-full
                     bg-transparent
                     border-b
@@ -161,19 +161,19 @@ export default function ContactForm() {
                     focus:border-green-400
                     transition-all
                   "
-                />
-              </div>
+                                />
+                            </div>
 
-              {/* Message */}
-              <div>
-                <label className="text-zinc-500 uppercase text-sm">
-                  Message
-                </label>
+                            {/* Message */}
+                            <div>
+                                <label className="text-zinc-500 uppercase text-sm">
+                                    Message
+                                </label>
 
-                <textarea
-                  rows={3}
-                  placeholder="Votre message..."
-                  className="
+                                <textarea
+                                    rows={3}
+                                    placeholder="Votre message..."
+                                    className="
                     w-full
                     bg-transparent
                     border-b
@@ -184,13 +184,13 @@ export default function ContactForm() {
                     focus:border-green-400
                     transition-all
                   "
-                />
-              </div>
+                                />
+                            </div>
 
-              {/* Button */}
-              <button
-                type="submit"
-                className="
+                            {/* Button */}
+                            <button
+                                type="submit"
+                                className="
                   w-full
                   bg-green-400
                   text-black
@@ -200,13 +200,13 @@ export default function ContactForm() {
                   transition-all
                   duration-300
                 "
-              >
-                Envoyer
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+                            >
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }
