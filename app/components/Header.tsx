@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, Search, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -13,7 +14,14 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center text-white font-bold text-lg">
-          LAGA<span className="text-green-800 font-bold">GOUE</span>
+          <Image
+              src="/images/logo.jpeg"
+              alt="mon logo pour mon site de vente de produits électroniques Home Digital"
+              width={60}
+              height={100}
+              className="rounded-2xl w-2xl max-w-30 h-auto object-contain relative"
+              
+            />
         </Link>
 
         {/* Right side */}
